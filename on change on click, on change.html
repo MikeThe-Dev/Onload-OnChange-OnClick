@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Eventos JavaScript</title>
+    <script src="script.js"></script>
+</head>
+<body onload="paginaCarregada()">
+    <h1>Aplicação das técnicas javascript eventos onload, onchange e onclick</h1>
+    
+    <div>
+        <label for="meuSelect">Escolha uma opção:</label>
+        <select id="meuSelect" onchange="valorMudou()">
+            <option value="">Selecione...</option>
+            <option value="Opção 1">Opção 1</option>
+            <option value="Opção 2">Opção 2</option>
+            <option value="Opção 3">Opção 3</option>
+        </select>
+    </div>
+    
+    <div>
+        <button onclick="botaoClicado()">Clique Aqui</button>
+        <p id="mensagem"></p>
+    </div>
+</body>
+</html>
